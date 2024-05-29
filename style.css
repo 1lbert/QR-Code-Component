@@ -6,7 +6,7 @@
     --font: "Outfit";
 }
 
-* {
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -17,23 +17,23 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Outfit";
 }
 
 .qr-container { 
     width: min(320px, 1440px);
     margin: auto;
-    padding: 16px;
+    padding: 1rem;
     /* outline: 1px solid red; */
     background-color: var(--white);
-    font-size: 15px;
-    border-radius: 16px;
+    font-size: 0.8rem;
+    border-radius: 1rem;
 }
 
 .text-container { 
     text-align: center;
-    padding: 16px;
+    padding: 1em;
     color: var(--darkBlue);
 }
 
@@ -45,6 +45,6 @@ img {
 .text-container p {
     padding-top: 16px;
     color: var(--grayishBlue);
-    font-size: 15px;
+    font-size: 1rem;
     /* outline: 1px solid red; */
 }
